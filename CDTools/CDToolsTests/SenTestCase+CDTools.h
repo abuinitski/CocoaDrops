@@ -8,7 +8,7 @@
 
 #import <SenTestingKit/SenTestingKit.h>
 
-#import "BasicBlocks.h"
+#import "CDBasicBlocks.h"
 
 @interface SenTestCase (CDTools)
 

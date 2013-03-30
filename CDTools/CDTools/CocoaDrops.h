@@ -7,7 +7,7 @@
 
 #import <Foundation/Foundation.h>
 
-#import <CocoaDrops/BasicBlocks.h>
+#import <CocoaDrops/CDBasicBlocks.h>
 
 #import <CocoaDrops/CDDelegateContainer.h>
 

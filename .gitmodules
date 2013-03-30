@@ -1,0 +1,3 @@
+[submodule "3rdparty/OCMock"]
+	path = 3rdparty/OCMock
+	url = git@github.com:arsbuinitsky/ocmock.git

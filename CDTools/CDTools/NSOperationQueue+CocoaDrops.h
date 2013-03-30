@@ -4,7 +4,7 @@
 
 #import <Foundation/Foundation.h>
 
-#import "BasicBlocks.h"
+#import "CDBasicBlocks.h"
 
 @interface NSOperationQueue (CocoaDrops)
 

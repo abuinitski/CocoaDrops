@@ -4,7 +4,7 @@
 
 #import <Foundation/Foundation.h>
 
-#import "BasicBlocks.h"
+#import "CDBasicBlocks.h"
 
 /**
 * Simple container for handling weak references to a number of delegates.

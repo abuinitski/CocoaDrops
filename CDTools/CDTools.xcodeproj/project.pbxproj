@@ -11,20 +11,20 @@
 		0A9CDC851706325700A540A3 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A9CDC841706325700A540A3 /* SenTestingKit.framework */; };
 		0A9CDC871706325700A540A3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A9CDC861706325700A540A3 /* UIKit.framework */; };
 		0A9CDC881706325700A540A3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A9CDC751706325600A540A3 /* Foundation.framework */; };
-		0A9CDC8B1706325700A540A3 /* libCDTools.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A9CDC721706325600A540A3 /* libCDTools.a */; };
+		0A9CDC8B1706325700A540A3 /* libCocoaDrops.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A9CDC721706325600A540A3 /* libCocoaDrops.a */; };
 		0A9CDC911706325700A540A3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0A9CDC8F1706325700A540A3 /* InfoPlist.strings */; };
-		0A9CDC9E170633C200A540A3 /* CDTools.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A9CDC7A1706325700A540A3 /* CDTools.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0A9CDCA81706372A00A540A3 /* BasicBlocks.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A9CDCA11706372A00A540A3 /* BasicBlocks.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0A9CDCA91706372A00A540A3 /* CDDelegateContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A9CDCA21706372A00A540A3 /* CDDelegateContainer.h */; };
+		0A9CDC9E170633C200A540A3 /* CocoaDrops.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A9CDC7A1706325700A540A3 /* CocoaDrops.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0A9CDCA81706372A00A540A3 /* CDBasicBlocks.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A9CDCA11706372A00A540A3 /* CDBasicBlocks.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0A9CDCA91706372A00A540A3 /* CDDelegateContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A9CDCA21706372A00A540A3 /* CDDelegateContainer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0A9CDCAA1706372A00A540A3 /* CDDelegateContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A9CDCA31706372A00A540A3 /* CDDelegateContainer.m */; };
-		0A9CDCAB1706372A00A540A3 /* NSArray+CocoaDrops.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A9CDCA41706372A00A540A3 /* NSArray+CocoaDrops.h */; };
+		0A9CDCAB1706372A00A540A3 /* NSArray+CocoaDrops.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A9CDCA41706372A00A540A3 /* NSArray+CocoaDrops.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0A9CDCAC1706372A00A540A3 /* NSArray+CocoaDrops.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A9CDCA51706372A00A540A3 /* NSArray+CocoaDrops.m */; };
-		0A9CDCAD1706372A00A540A3 /* NSOperationQueue+CocoaDrops.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A9CDCA61706372A00A540A3 /* NSOperationQueue+CocoaDrops.h */; };
+		0A9CDCAD1706372A00A540A3 /* NSOperationQueue+CocoaDrops.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A9CDCA61706372A00A540A3 /* NSOperationQueue+CocoaDrops.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0A9CDCAE1706372A00A540A3 /* NSOperationQueue+CocoaDrops.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A9CDCA71706372A00A540A3 /* NSOperationQueue+CocoaDrops.m */; };
 		0A9CDCB017063A3200A540A3 /* CDLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A9CDCAF17063A3200A540A3 /* CDLog.h */; };
 		0A9CDCB317063E2F00A540A3 /* CDDelegateContainerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A9CDCB217063E2F00A540A3 /* CDDelegateContainerTests.m */; };
-		0A9CDCBE1706409B00A540A3 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A9CDCBD1706409B00A540A3 /* libOCMock.a */; };
 		0A9CDCC1170645E100A540A3 /* SenTestCase+CDTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A9CDCC0170645E100A540A3 /* SenTestCase+CDTools.m */; };
+		0A9CDD7D1706EB5900A540A3 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A9CDD7A1706EB4700A540A3 /* libOCMock.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +34,34 @@
 			proxyType = 1;
 			remoteGlobalIDString = 0A9CDC711706325600A540A3;
 			remoteInfo = CDTools;
+		};
+		0A9CDD751706EB4700A540A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0A9CDD6F1706EB4600A540A3 /* OCMock.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 030EF0A814632FD000B04273;
+			remoteInfo = OCMock;
+		};
+		0A9CDD771706EB4700A540A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0A9CDD6F1706EB4600A540A3 /* OCMock.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 030EF0C014632FD000B04273;
+			remoteInfo = OCMockTests;
+		};
+		0A9CDD791706EB4700A540A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0A9CDD6F1706EB4600A540A3 /* OCMock.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 030EF0DC14632FF700B04273;
+			remoteInfo = OCMockLib;
+		};
+		0A9CDD7B1706EB5200A540A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0A9CDD6F1706EB4600A540A3 /* OCMock.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 030EF0DB14632FF700B04273;
+			remoteInfo = OCMockLib;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -50,16 +78,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0A9CDC721706325600A540A3 /* libCDTools.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCDTools.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A9CDC721706325600A540A3 /* libCocoaDrops.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCocoaDrops.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A9CDC751706325600A540A3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0A9CDC791706325700A540A3 /* CDTools-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CDTools-Prefix.pch"; sourceTree = "<group>"; };
-		0A9CDC7A1706325700A540A3 /* CDTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDTools.h; sourceTree = "<group>"; };
+		0A9CDC7A1706325700A540A3 /* CocoaDrops.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CocoaDrops.h; sourceTree = "<group>"; };
 		0A9CDC831706325700A540A3 /* CDToolsTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CDToolsTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A9CDC841706325700A540A3 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		0A9CDC861706325700A540A3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		0A9CDC8E1706325700A540A3 /* CDToolsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CDToolsTests-Info.plist"; sourceTree = "<group>"; };
 		0A9CDC901706325700A540A3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		0A9CDCA11706372A00A540A3 /* BasicBlocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicBlocks.h; sourceTree = "<group>"; };
+		0A9CDCA11706372A00A540A3 /* CDBasicBlocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDBasicBlocks.h; sourceTree = "<group>"; };
 		0A9CDCA21706372A00A540A3 /* CDDelegateContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDDelegateContainer.h; sourceTree = "<group>"; };
 		0A9CDCA31706372A00A540A3 /* CDDelegateContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDDelegateContainer.m; sourceTree = "<group>"; };
 		0A9CDCA41706372A00A540A3 /* NSArray+CocoaDrops.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+CocoaDrops.h"; sourceTree = "<group>"; };
@@ -69,9 +97,9 @@
 		0A9CDCAF17063A3200A540A3 /* CDLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDLog.h; sourceTree = "<group>"; };
 		0A9CDCB117063E2F00A540A3 /* CDDelegateContainerTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDDelegateContainerTests.h; sourceTree = "<group>"; };
 		0A9CDCB217063E2F00A540A3 /* CDDelegateContainerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDDelegateContainerTests.m; sourceTree = "<group>"; };
-		0A9CDCBD1706409B00A540A3 /* libOCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libOCMock.a; path = "../3rdparty/OCMock-2.2.1/libOCMock.a"; sourceTree = "<group>"; };
 		0A9CDCBF170645E100A540A3 /* SenTestCase+CDTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SenTestCase+CDTools.h"; sourceTree = "<group>"; };
 		0A9CDCC0170645E100A540A3 /* SenTestCase+CDTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SenTestCase+CDTools.m"; sourceTree = "<group>"; };
+		0A9CDD6F1706EB4600A540A3 /* OCMock.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = OCMock.xcodeproj; path = ../3rdparty/OCMock/Source/OCMock.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,11 +115,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A9CDD7D1706EB5900A540A3 /* libOCMock.a in Frameworks */,
 				0A9CDC851706325700A540A3 /* SenTestingKit.framework in Frameworks */,
 				0A9CDC871706325700A540A3 /* UIKit.framework in Frameworks */,
 				0A9CDC881706325700A540A3 /* Foundation.framework in Frameworks */,
-				0A9CDC8B1706325700A540A3 /* libCDTools.a in Frameworks */,
-				0A9CDCBE1706409B00A540A3 /* libOCMock.a in Frameworks */,
+				0A9CDC8B1706325700A540A3 /* libCocoaDrops.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,7 +139,7 @@
 		0A9CDC731706325600A540A3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0A9CDC721706325600A540A3 /* libCDTools.a */,
+				0A9CDC721706325600A540A3 /* libCocoaDrops.a */,
 				0A9CDC831706325700A540A3 /* CDToolsTests.octest */,
 			);
 			name = Products;
@@ -120,7 +148,7 @@
 		0A9CDC741706325600A540A3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0A9CDCBD1706409B00A540A3 /* libOCMock.a */,
+				0A9CDD6F1706EB4600A540A3 /* OCMock.xcodeproj */,
 				0A9CDC751706325600A540A3 /* Foundation.framework */,
 				0A9CDC841706325700A540A3 /* SenTestingKit.framework */,
 				0A9CDC861706325700A540A3 /* UIKit.framework */,
@@ -131,14 +159,14 @@
 		0A9CDC771706325600A540A3 /* CDTools */ = {
 			isa = PBXGroup;
 			children = (
-				0A9CDCA11706372A00A540A3 /* BasicBlocks.h */,
+				0A9CDCA11706372A00A540A3 /* CDBasicBlocks.h */,
 				0A9CDCA21706372A00A540A3 /* CDDelegateContainer.h */,
 				0A9CDCA31706372A00A540A3 /* CDDelegateContainer.m */,
 				0A9CDCA41706372A00A540A3 /* NSArray+CocoaDrops.h */,
 				0A9CDCA51706372A00A540A3 /* NSArray+CocoaDrops.m */,
 				0A9CDCA61706372A00A540A3 /* NSOperationQueue+CocoaDrops.h */,
 				0A9CDCA71706372A00A540A3 /* NSOperationQueue+CocoaDrops.m */,
-				0A9CDC7A1706325700A540A3 /* CDTools.h */,
+				0A9CDC7A1706325700A540A3 /* CocoaDrops.h */,
 				0A9CDC781706325700A540A3 /* Supporting Files */,
 				0A9CDCAF17063A3200A540A3 /* CDLog.h */,
 			);
@@ -174,6 +202,16 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		0A9CDD701706EB4600A540A3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0A9CDD761706EB4700A540A3 /* OCMock.framework */,
+				0A9CDD781706EB4700A540A3 /* OCMockTests.octest */,
+				0A9CDD7A1706EB4700A540A3 /* libOCMock.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -181,8 +219,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A9CDC9E170633C200A540A3 /* CDTools.h in Headers */,
-				0A9CDCA81706372A00A540A3 /* BasicBlocks.h in Headers */,
+				0A9CDC9E170633C200A540A3 /* CocoaDrops.h in Headers */,
+				0A9CDCA81706372A00A540A3 /* CDBasicBlocks.h in Headers */,
 				0A9CDCA91706372A00A540A3 /* CDDelegateContainer.h in Headers */,
 				0A9CDCAB1706372A00A540A3 /* NSArray+CocoaDrops.h in Headers */,
 				0A9CDCAD1706372A00A540A3 /* NSOperationQueue+CocoaDrops.h in Headers */,
@@ -208,7 +246,7 @@
 			);
 			name = CDTools;
 			productName = CDTools;
-			productReference = 0A9CDC721706325600A540A3 /* libCDTools.a */;
+			productReference = 0A9CDC721706325600A540A3 /* libCocoaDrops.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		0A9CDC821706325700A540A3 /* CDToolsTests */ = {
@@ -223,6 +261,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				0A9CDD7C1706EB5200A540A3 /* PBXTargetDependency */,
 				0A9CDC8A1706325700A540A3 /* PBXTargetDependency */,
 			);
 			name = CDToolsTests;
@@ -249,6 +288,12 @@
 			mainGroup = 0A9CDC691706325600A540A3;
 			productRefGroup = 0A9CDC731706325600A540A3 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 0A9CDD701706EB4600A540A3 /* Products */;
+					ProjectRef = 0A9CDD6F1706EB4600A540A3 /* OCMock.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				0A9CDC711706325600A540A3 /* CDTools */,
@@ -256,6 +301,30 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		0A9CDD761706EB4700A540A3 /* OCMock.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = OCMock.framework;
+			remoteRef = 0A9CDD751706EB4700A540A3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0A9CDD781706EB4700A540A3 /* OCMockTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = OCMockTests.octest;
+			remoteRef = 0A9CDD771706EB4700A540A3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0A9CDD7A1706EB4700A540A3 /* libOCMock.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libOCMock.a;
+			remoteRef = 0A9CDD791706EB4700A540A3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		0A9CDC801706325700A540A3 /* Resources */ = {
@@ -311,6 +380,11 @@
 			isa = PBXTargetDependency;
 			target = 0A9CDC711706325600A540A3 /* CDTools */;
 			targetProxy = 0A9CDC891706325700A540A3 /* PBXContainerItemProxy */;
+		};
+		0A9CDD7C1706EB5200A540A3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = OCMockLib;
+			targetProxy = 0A9CDD7B1706EB5200A540A3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -388,8 +462,8 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CDTools/CDTools-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "$(PROJECT_NAME)Headers";
+				PRODUCT_NAME = CocoaDrops;
+				PUBLIC_HEADERS_FOLDER_PATH = "$(PRODUCT_NAME)";
 				SKIP_INSTALL = YES;
 				STRIP_STYLE = "non-global";
 			};
@@ -404,8 +478,8 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CDTools/CDTools-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "$(PROJECT_NAME)Headers";
+				PRODUCT_NAME = CocoaDrops;
+				PUBLIC_HEADERS_FOLDER_PATH = "$(PRODUCT_NAME)";
 				SKIP_INSTALL = YES;
 				STRIP_STYLE = "non-global";
 			};
@@ -420,12 +494,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CDTools/CDTools-Prefix.pch";
-				HEADER_SEARCH_PATHS = "../3rdparty/OCMock-2.2.1";
+				HEADER_SEARCH_PATHS = "${CONFIGURATION_BUILD_DIR}";
 				INFOPLIST_FILE = "CDToolsTests/CDToolsTests-Info.plist";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/../3rdparty/OCMock-2.2.1\"",
-				);
 				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = octest;
@@ -441,12 +511,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CDTools/CDTools-Prefix.pch";
-				HEADER_SEARCH_PATHS = "../3rdparty/OCMock-2.2.1";
+				HEADER_SEARCH_PATHS = "${CONFIGURATION_BUILD_DIR}";
 				INFOPLIST_FILE = "CDToolsTests/CDToolsTests-Info.plist";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/../3rdparty/OCMock-2.2.1\"",
-				);
 				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = octest;
@@ -472,6 +538,7 @@
 				0A9CDC991706325700A540A3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0A9CDC9A1706325700A540A3 /* Build configuration list for PBXNativeTarget "CDToolsTests" */ = {
 			isa = XCConfigurationList;
@@ -480,6 +547,7 @@
 				0A9CDC9C1706325700A540A3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
