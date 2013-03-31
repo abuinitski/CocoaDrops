@@ -1,0 +1,629 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A9CDD8F1706FB5100A540A3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A9CDD8E1706FB5100A540A3 /* Foundation.framework */; };
+		0A9CDD9E1706FB5100A540A3 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A9CDD9D1706FB5100A540A3 /* SenTestingKit.framework */; };
+		0A9CDDA01706FB5100A540A3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A9CDD9F1706FB5100A540A3 /* UIKit.framework */; };
+		0A9CDDA11706FB5100A540A3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A9CDD8E1706FB5100A540A3 /* Foundation.framework */; };
+		0A9CDDA41706FB5100A540A3 /* libCDDataSources.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A9CDD8B1706FB5100A540A3 /* libCDDataSources.a */; };
+		0A9CDDAA1706FB5100A540A3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0A9CDDA81706FB5100A540A3 /* InfoPlist.strings */; };
+		0A9CDDAD1706FB5100A540A3 /* CDPagedDataSourceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A9CDDAC1706FB5100A540A3 /* CDPagedDataSourceTests.m */; };
+		0A9CDDC31706FBDF00A540A3 /* libCocoaDrops.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A9CDDBD1706FB9600A540A3 /* libCocoaDrops.a */; };
+		0A9CDDCD1706FC8900A540A3 /* CDDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A9CDDC61706FC8900A540A3 /* CDDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0A9CDDCE1706FC8900A540A3 /* CDDeletingDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A9CDDC71706FC8900A540A3 /* CDDeletingDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0A9CDDCF1706FC8900A540A3 /* CDDeletingDataSourceDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A9CDDC81706FC8900A540A3 /* CDDeletingDataSourceDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0A9CDDD01706FC8900A540A3 /* CDLoadingDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A9CDDC91706FC8900A540A3 /* CDLoadingDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0A9CDDD11706FC8900A540A3 /* CDLoadingDataSourceDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A9CDDCA1706FC8900A540A3 /* CDLoadingDataSourceDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0A9CDDD21706FC8900A540A3 /* CDPagedLoadingDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A9CDDCB1706FC8900A540A3 /* CDPagedLoadingDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0A9CDDD31706FC8900A540A3 /* CDPagedLoadingDataSourceDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A9CDDCC1706FC8900A540A3 /* CDPagedLoadingDataSourceDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0A9CDDE217072A0D00A540A3 /* SenTestCase+CDTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A9CDDE117072A0D00A540A3 /* SenTestCase+CDTools.m */; };
+		0A9CDDF117074C6000A540A3 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A9CDDEE17074C5200A540A3 /* libOCMock.a */; };
+		D56C6D1334337AAB24C57173 /* CDPagedDataSource.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D56E7E6DAB491C2E4E45BE90 /* CDPagedDataSource.h */; };
+		D56D045B54B4632232F7DCAC /* CDPagedDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = D5639D0D42C52E0BDEE93B29 /* CDPagedDataSource.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0A9CDDA21706FB5100A540A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0A9CDD831706FB5100A540A3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0A9CDD8A1706FB5100A540A3;
+			remoteInfo = CDDataSources;
+		};
+		0A9CDDBC1706FB9600A540A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0A9CDDB61706FB9500A540A3 /* CDTools.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0A9CDC721706325600A540A3;
+			remoteInfo = CDTools;
+		};
+		0A9CDDBE1706FB9600A540A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0A9CDDB61706FB9500A540A3 /* CDTools.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0A9CDC831706325700A540A3;
+			remoteInfo = CDToolsTests;
+		};
+		0A9CDDC01706FBCD00A540A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0A9CDDB61706FB9500A540A3 /* CDTools.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 0A9CDC711706325600A540A3;
+			remoteInfo = CDTools;
+		};
+		0A9CDDE917074C5200A540A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0A9CDDE317074C5200A540A3 /* OCMock.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 030EF0A814632FD000B04273;
+			remoteInfo = OCMock;
+		};
+		0A9CDDEB17074C5200A540A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0A9CDDE317074C5200A540A3 /* OCMock.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 030EF0C014632FD000B04273;
+			remoteInfo = OCMockTests;
+		};
+		0A9CDDED17074C5200A540A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0A9CDDE317074C5200A540A3 /* OCMock.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 030EF0DC14632FF700B04273;
+			remoteInfo = OCMockLib;
+		};
+		0A9CDDEF17074C5B00A540A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0A9CDDE317074C5200A540A3 /* OCMock.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 030EF0DB14632FF700B04273;
+			remoteInfo = OCMockLib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0A9CDD891706FB5100A540A3 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+				D56C6D1334337AAB24C57173 /* CDPagedDataSource.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0A9CDD8B1706FB5100A540A3 /* libCDDataSources.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCDDataSources.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A9CDD8E1706FB5100A540A3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0A9CDD921706FB5100A540A3 /* CDDataSources-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CDDataSources-Prefix.pch"; sourceTree = "<group>"; };
+		0A9CDD9C1706FB5100A540A3 /* CDDataSourcesTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CDDataSourcesTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A9CDD9D1706FB5100A540A3 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		0A9CDD9F1706FB5100A540A3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		0A9CDDA71706FB5100A540A3 /* CDDataSourcesTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CDDataSourcesTests-Info.plist"; sourceTree = "<group>"; };
+		0A9CDDA91706FB5100A540A3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0A9CDDAB1706FB5100A540A3 /* CDPagedDataSourceTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDPagedDataSourceTests.h; sourceTree = "<group>"; };
+		0A9CDDAC1706FB5100A540A3 /* CDPagedDataSourceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDPagedDataSourceTests.m; sourceTree = "<group>"; };
+		0A9CDDB61706FB9500A540A3 /* CDTools.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CDTools.xcodeproj; path = ../CDTools/CDTools.xcodeproj; sourceTree = "<group>"; };
+		0A9CDDC61706FC8900A540A3 /* CDDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDDataSource.h; sourceTree = "<group>"; };
+		0A9CDDC71706FC8900A540A3 /* CDDeletingDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDDeletingDataSource.h; sourceTree = "<group>"; };
+		0A9CDDC81706FC8900A540A3 /* CDDeletingDataSourceDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDDeletingDataSourceDelegate.h; sourceTree = "<group>"; };
+		0A9CDDC91706FC8900A540A3 /* CDLoadingDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDLoadingDataSource.h; sourceTree = "<group>"; };
+		0A9CDDCA1706FC8900A540A3 /* CDLoadingDataSourceDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDLoadingDataSourceDelegate.h; sourceTree = "<group>"; };
+		0A9CDDCB1706FC8900A540A3 /* CDPagedLoadingDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDPagedLoadingDataSource.h; sourceTree = "<group>"; };
+		0A9CDDCC1706FC8900A540A3 /* CDPagedLoadingDataSourceDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDPagedLoadingDataSourceDelegate.h; sourceTree = "<group>"; };
+		0A9CDDE017072A0D00A540A3 /* SenTestCase+CDTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SenTestCase+CDTools.h"; sourceTree = "<group>"; };
+		0A9CDDE117072A0D00A540A3 /* SenTestCase+CDTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SenTestCase+CDTools.m"; sourceTree = "<group>"; };
+		0A9CDDE317074C5200A540A3 /* OCMock.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = OCMock.xcodeproj; path = ../3rdparty/OCMock/Source/OCMock.xcodeproj; sourceTree = "<group>"; };
+		D5639D0D42C52E0BDEE93B29 /* CDPagedDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDPagedDataSource.m; sourceTree = "<group>"; };
+		D56E7E6DAB491C2E4E45BE90 /* CDPagedDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDPagedDataSource.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0A9CDD881706FB5100A540A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A9CDDC31706FBDF00A540A3 /* libCocoaDrops.a in Frameworks */,
+				0A9CDD8F1706FB5100A540A3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A9CDD981706FB5100A540A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A9CDDF117074C6000A540A3 /* libOCMock.a in Frameworks */,
+				0A9CDD9E1706FB5100A540A3 /* SenTestingKit.framework in Frameworks */,
+				0A9CDDA01706FB5100A540A3 /* UIKit.framework in Frameworks */,
+				0A9CDDA11706FB5100A540A3 /* Foundation.framework in Frameworks */,
+				0A9CDDA41706FB5100A540A3 /* libCDDataSources.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A9CDD821706FB5100A540A3 = {
+			isa = PBXGroup;
+			children = (
+				0A9CDD901706FB5100A540A3 /* CDDataSources */,
+				0A9CDDA51706FB5100A540A3 /* CDDataSourcesTests */,
+				0A9CDD8D1706FB5100A540A3 /* Frameworks */,
+				0A9CDD8C1706FB5100A540A3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0A9CDD8C1706FB5100A540A3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0A9CDD8B1706FB5100A540A3 /* libCDDataSources.a */,
+				0A9CDD9C1706FB5100A540A3 /* CDDataSourcesTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0A9CDD8D1706FB5100A540A3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0A9CDDE317074C5200A540A3 /* OCMock.xcodeproj */,
+				0A9CDDB61706FB9500A540A3 /* CDTools.xcodeproj */,
+				0A9CDD8E1706FB5100A540A3 /* Foundation.framework */,
+				0A9CDD9D1706FB5100A540A3 /* SenTestingKit.framework */,
+				0A9CDD9F1706FB5100A540A3 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0A9CDD901706FB5100A540A3 /* CDDataSources */ = {
+			isa = PBXGroup;
+			children = (
+				0A9CDDC51706FC7000A540A3 /* Protocols */,
+				0A9CDD911706FB5100A540A3 /* Supporting Files */,
+				D56A192F12BAC3B767E5B83A /* Implementations */,
+			);
+			path = CDDataSources;
+			sourceTree = "<group>";
+		};
+		0A9CDD911706FB5100A540A3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0A9CDD921706FB5100A540A3 /* CDDataSources-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0A9CDDA51706FB5100A540A3 /* CDDataSourcesTests */ = {
+			isa = PBXGroup;
+			children = (
+				0A9CDDE017072A0D00A540A3 /* SenTestCase+CDTools.h */,
+				0A9CDDE117072A0D00A540A3 /* SenTestCase+CDTools.m */,
+				0A9CDDAB1706FB5100A540A3 /* CDPagedDataSourceTests.h */,
+				0A9CDDAC1706FB5100A540A3 /* CDPagedDataSourceTests.m */,
+				0A9CDDA61706FB5100A540A3 /* Supporting Files */,
+			);
+			path = CDDataSourcesTests;
+			sourceTree = "<group>";
+		};
+		0A9CDDA61706FB5100A540A3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0A9CDDA71706FB5100A540A3 /* CDDataSourcesTests-Info.plist */,
+				0A9CDDA81706FB5100A540A3 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0A9CDDB71706FB9500A540A3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0A9CDDBD1706FB9600A540A3 /* libCocoaDrops.a */,
+				0A9CDDBF1706FB9600A540A3 /* CDToolsTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0A9CDDC51706FC7000A540A3 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				0A9CDDC61706FC8900A540A3 /* CDDataSource.h */,
+				0A9CDDC91706FC8900A540A3 /* CDLoadingDataSource.h */,
+				0A9CDDCA1706FC8900A540A3 /* CDLoadingDataSourceDelegate.h */,
+				0A9CDDCB1706FC8900A540A3 /* CDPagedLoadingDataSource.h */,
+				0A9CDDCC1706FC8900A540A3 /* CDPagedLoadingDataSourceDelegate.h */,
+				0A9CDDC71706FC8900A540A3 /* CDDeletingDataSource.h */,
+				0A9CDDC81706FC8900A540A3 /* CDDeletingDataSourceDelegate.h */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		0A9CDDE417074C5200A540A3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0A9CDDEA17074C5200A540A3 /* OCMock.framework */,
+				0A9CDDEC17074C5200A540A3 /* OCMockTests.octest */,
+				0A9CDDEE17074C5200A540A3 /* libOCMock.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D56A192F12BAC3B767E5B83A /* Implementations */ = {
+			isa = PBXGroup;
+			children = (
+				D56E7E6DAB491C2E4E45BE90 /* CDPagedDataSource.h */,
+				D5639D0D42C52E0BDEE93B29 /* CDPagedDataSource.m */,
+			);
+			path = Implementations;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0A9CDDC21706FBD600A540A3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A9CDDCD1706FC8900A540A3 /* CDDataSource.h in Headers */,
+				0A9CDDCE1706FC8900A540A3 /* CDDeletingDataSource.h in Headers */,
+				0A9CDDCF1706FC8900A540A3 /* CDDeletingDataSourceDelegate.h in Headers */,
+				0A9CDDD01706FC8900A540A3 /* CDLoadingDataSource.h in Headers */,
+				0A9CDDD11706FC8900A540A3 /* CDLoadingDataSourceDelegate.h in Headers */,
+				0A9CDDD21706FC8900A540A3 /* CDPagedLoadingDataSource.h in Headers */,
+				0A9CDDD31706FC8900A540A3 /* CDPagedLoadingDataSourceDelegate.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0A9CDD8A1706FB5100A540A3 /* CDDataSources */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A9CDDB01706FB5100A540A3 /* Build configuration list for PBXNativeTarget "CDDataSources" */;
+			buildPhases = (
+				0A9CDD871706FB5100A540A3 /* Sources */,
+				0A9CDD881706FB5100A540A3 /* Frameworks */,
+				0A9CDD891706FB5100A540A3 /* CopyFiles */,
+				0A9CDDC21706FBD600A540A3 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0A9CDDC11706FBCD00A540A3 /* PBXTargetDependency */,
+			);
+			name = CDDataSources;
+			productName = CDDataSources;
+			productReference = 0A9CDD8B1706FB5100A540A3 /* libCDDataSources.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		0A9CDD9B1706FB5100A540A3 /* CDDataSourcesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A9CDDB31706FB5100A540A3 /* Build configuration list for PBXNativeTarget "CDDataSourcesTests" */;
+			buildPhases = (
+				0A9CDD971706FB5100A540A3 /* Sources */,
+				0A9CDD981706FB5100A540A3 /* Frameworks */,
+				0A9CDD991706FB5100A540A3 /* Resources */,
+				0A9CDD9A1706FB5100A540A3 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0A9CDDF017074C5B00A540A3 /* PBXTargetDependency */,
+				0A9CDDA31706FB5100A540A3 /* PBXTargetDependency */,
+			);
+			name = CDDataSourcesTests;
+			productName = CDDataSourcesTests;
+			productReference = 0A9CDD9C1706FB5100A540A3 /* CDDataSourcesTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0A9CDD831706FB5100A540A3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = Home;
+			};
+			buildConfigurationList = 0A9CDD861706FB5100A540A3 /* Build configuration list for PBXProject "CDDataSources" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0A9CDD821706FB5100A540A3;
+			productRefGroup = 0A9CDD8C1706FB5100A540A3 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 0A9CDDB71706FB9500A540A3 /* Products */;
+					ProjectRef = 0A9CDDB61706FB9500A540A3 /* CDTools.xcodeproj */;
+				},
+				{
+					ProductGroup = 0A9CDDE417074C5200A540A3 /* Products */;
+					ProjectRef = 0A9CDDE317074C5200A540A3 /* OCMock.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				0A9CDD8A1706FB5100A540A3 /* CDDataSources */,
+				0A9CDD9B1706FB5100A540A3 /* CDDataSourcesTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		0A9CDDBD1706FB9600A540A3 /* libCocoaDrops.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCocoaDrops.a;
+			remoteRef = 0A9CDDBC1706FB9600A540A3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0A9CDDBF1706FB9600A540A3 /* CDToolsTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = CDToolsTests.octest;
+			remoteRef = 0A9CDDBE1706FB9600A540A3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0A9CDDEA17074C5200A540A3 /* OCMock.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = OCMock.framework;
+			remoteRef = 0A9CDDE917074C5200A540A3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0A9CDDEC17074C5200A540A3 /* OCMockTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = OCMockTests.octest;
+			remoteRef = 0A9CDDEB17074C5200A540A3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0A9CDDEE17074C5200A540A3 /* libOCMock.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libOCMock.a;
+			remoteRef = 0A9CDDED17074C5200A540A3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0A9CDD991706FB5100A540A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A9CDDAA1706FB5100A540A3 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0A9CDD9A1706FB5100A540A3 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0A9CDD871706FB5100A540A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D56D045B54B4632232F7DCAC /* CDPagedDataSource.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A9CDD971706FB5100A540A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A9CDDAD1706FB5100A540A3 /* CDPagedDataSourceTests.m in Sources */,
+				0A9CDDE217072A0D00A540A3 /* SenTestCase+CDTools.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0A9CDDA31706FB5100A540A3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0A9CDD8A1706FB5100A540A3 /* CDDataSources */;
+			targetProxy = 0A9CDDA21706FB5100A540A3 /* PBXContainerItemProxy */;
+		};
+		0A9CDDC11706FBCD00A540A3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CDTools;
+			targetProxy = 0A9CDDC01706FBCD00A540A3 /* PBXContainerItemProxy */;
+		};
+		0A9CDDF017074C5B00A540A3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = OCMockLib;
+			targetProxy = 0A9CDDEF17074C5B00A540A3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0A9CDDA81706FB5100A540A3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0A9CDDA91706FB5100A540A3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0A9CDDAE1706FB5100A540A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0A9CDDAF1706FB5100A540A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0A9CDDB11706FB5100A540A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/CDDataSources.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CDDataSources/CDDataSources-Prefix.pch";
+				HEADER_SEARCH_PATHS = "${CONFIGURATION_BUILD_DIR}";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		0A9CDDB21706FB5100A540A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/CDDataSources.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CDDataSources/CDDataSources-Prefix.pch";
+				HEADER_SEARCH_PATHS = "${CONFIGURATION_BUILD_DIR}";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		0A9CDDB41706FB5100A540A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CDDataSources/CDDataSources-Prefix.pch";
+				HEADER_SEARCH_PATHS = "${CONFIGURATION_BUILD_DIR}";
+				INFOPLIST_FILE = "CDDataSourcesTests/CDDataSourcesTests-Info.plist";
+				OTHER_LDFLAGS = "-all_load";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		0A9CDDB51706FB5100A540A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CDDataSources/CDDataSources-Prefix.pch";
+				HEADER_SEARCH_PATHS = "${CONFIGURATION_BUILD_DIR}";
+				INFOPLIST_FILE = "CDDataSourcesTests/CDDataSourcesTests-Info.plist";
+				OTHER_LDFLAGS = "-all_load";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0A9CDD861706FB5100A540A3 /* Build configuration list for PBXProject "CDDataSources" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A9CDDAE1706FB5100A540A3 /* Debug */,
+				0A9CDDAF1706FB5100A540A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A9CDDB01706FB5100A540A3 /* Build configuration list for PBXNativeTarget "CDDataSources" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A9CDDB11706FB5100A540A3 /* Debug */,
+				0A9CDDB21706FB5100A540A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A9CDDB31706FB5100A540A3 /* Build configuration list for PBXNativeTarget "CDDataSourcesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A9CDDB41706FB5100A540A3 /* Debug */,
+				0A9CDDB51706FB5100A540A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0A9CDD831706FB5100A540A3 /* Project object */;
+}

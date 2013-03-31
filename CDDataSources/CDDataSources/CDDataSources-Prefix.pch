@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'CDDataSources' target in the 'CDDataSources' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif
