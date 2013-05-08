@@ -11,5 +11,7 @@
 
 #import <CocoaDrops/CDDelegateContainer.h>
 
+#import <CocoaDrops/CDOrderedMutableDictionary.h>
+
 #import <CocoaDrops/NSOperationQueue+CocoaDrops.h>
 #import <CocoaDrops/NSArray+CocoaDrops.h>

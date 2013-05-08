@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A574532172286D400EDA9A4 /* CDOrderedMutableDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A574530172286D400EDA9A4 /* CDOrderedMutableDictionary.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0A574533172286D400EDA9A4 /* CDOrderedMutableDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A574531172286D400EDA9A4 /* CDOrderedMutableDictionary.m */; };
+		0A574538172289BF00EDA9A4 /* CDOrderedMutableDictionaryTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A574537172289BF00EDA9A4 /* CDOrderedMutableDictionaryTest.m */; };
 		0A9CDC761706325600A540A3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A9CDC751706325600A540A3 /* Foundation.framework */; };
 		0A9CDC851706325700A540A3 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A9CDC841706325700A540A3 /* SenTestingKit.framework */; };
 		0A9CDC871706325700A540A3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A9CDC861706325700A540A3 /* UIKit.framework */; };
@@ -21,7 +24,7 @@
 		0A9CDCAC1706372A00A540A3 /* NSArray+CocoaDrops.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A9CDCA51706372A00A540A3 /* NSArray+CocoaDrops.m */; };
 		0A9CDCAD1706372A00A540A3 /* NSOperationQueue+CocoaDrops.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A9CDCA61706372A00A540A3 /* NSOperationQueue+CocoaDrops.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0A9CDCAE1706372A00A540A3 /* NSOperationQueue+CocoaDrops.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A9CDCA71706372A00A540A3 /* NSOperationQueue+CocoaDrops.m */; };
-		0A9CDCB017063A3200A540A3 /* CDLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A9CDCAF17063A3200A540A3 /* CDLog.h */; };
+		0A9CDCB017063A3200A540A3 /* CDLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A9CDCAF17063A3200A540A3 /* CDLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0A9CDCB317063E2F00A540A3 /* CDDelegateContainerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A9CDCB217063E2F00A540A3 /* CDDelegateContainerTests.m */; };
 		0A9CDCC1170645E100A540A3 /* SenTestCase+CDTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A9CDCC0170645E100A540A3 /* SenTestCase+CDTools.m */; };
 		0A9CDD7D1706EB5900A540A3 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A9CDD7A1706EB4700A540A3 /* libOCMock.a */; };
@@ -78,6 +81,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0A574530172286D400EDA9A4 /* CDOrderedMutableDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDOrderedMutableDictionary.h; sourceTree = "<group>"; };
+		0A574531172286D400EDA9A4 /* CDOrderedMutableDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDOrderedMutableDictionary.m; sourceTree = "<group>"; };
+		0A574536172289BF00EDA9A4 /* CDOrderedMutableDictionaryTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDOrderedMutableDictionaryTest.h; sourceTree = "<group>"; };
+		0A574537172289BF00EDA9A4 /* CDOrderedMutableDictionaryTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDOrderedMutableDictionaryTest.m; sourceTree = "<group>"; };
 		0A9CDC721706325600A540A3 /* libCocoaDrops.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCocoaDrops.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A9CDC751706325600A540A3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0A9CDC791706325700A540A3 /* CDTools-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CDTools-Prefix.pch"; sourceTree = "<group>"; };
@@ -166,6 +173,8 @@
 				0A9CDCA51706372A00A540A3 /* NSArray+CocoaDrops.m */,
 				0A9CDCA61706372A00A540A3 /* NSOperationQueue+CocoaDrops.h */,
 				0A9CDCA71706372A00A540A3 /* NSOperationQueue+CocoaDrops.m */,
+				0A574530172286D400EDA9A4 /* CDOrderedMutableDictionary.h */,
+				0A574531172286D400EDA9A4 /* CDOrderedMutableDictionary.m */,
 				0A9CDC7A1706325700A540A3 /* CocoaDrops.h */,
 				0A9CDC781706325700A540A3 /* Supporting Files */,
 				0A9CDCAF17063A3200A540A3 /* CDLog.h */,
@@ -189,6 +198,8 @@
 				0A9CDCB217063E2F00A540A3 /* CDDelegateContainerTests.m */,
 				0A9CDCBF170645E100A540A3 /* SenTestCase+CDTools.h */,
 				0A9CDCC0170645E100A540A3 /* SenTestCase+CDTools.m */,
+				0A574536172289BF00EDA9A4 /* CDOrderedMutableDictionaryTest.h */,
+				0A574537172289BF00EDA9A4 /* CDOrderedMutableDictionaryTest.m */,
 			);
 			path = CDToolsTests;
 			sourceTree = "<group>";
@@ -225,6 +236,7 @@
 				0A9CDCAB1706372A00A540A3 /* NSArray+CocoaDrops.h in Headers */,
 				0A9CDCAD1706372A00A540A3 /* NSOperationQueue+CocoaDrops.h in Headers */,
 				0A9CDCB017063A3200A540A3 /* CDLog.h in Headers */,
+				0A574532172286D400EDA9A4 /* CDOrderedMutableDictionary.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,6 +373,7 @@
 				0A9CDCAA1706372A00A540A3 /* CDDelegateContainer.m in Sources */,
 				0A9CDCAC1706372A00A540A3 /* NSArray+CocoaDrops.m in Sources */,
 				0A9CDCAE1706372A00A540A3 /* NSOperationQueue+CocoaDrops.m in Sources */,
+				0A574533172286D400EDA9A4 /* CDOrderedMutableDictionary.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,6 +383,7 @@
 			files = (
 				0A9CDCB317063E2F00A540A3 /* CDDelegateContainerTests.m in Sources */,
 				0A9CDCC1170645E100A540A3 /* SenTestCase+CDTools.m in Sources */,
+				0A574538172289BF00EDA9A4 /* CDOrderedMutableDictionaryTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

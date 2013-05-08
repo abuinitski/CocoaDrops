@@ -9,7 +9,7 @@
 #import <objc/message.h>
 
 
-@interface MLDelegateHandle : NSObject
+@interface CDDelegateHandle : NSObject
 
 + (id)newWithDelegate:(id)delegate;
 
@@ -18,10 +18,10 @@
 @end
 
 
-@implementation MLDelegateHandle
+@implementation CDDelegateHandle
 
 + (id)newWithDelegate:(id)delegate {
-    MLDelegateHandle *handle = [[MLDelegateHandle alloc] init];
+    CDDelegateHandle *handle = [[CDDelegateHandle alloc] init];
     handle.delegate = delegate;
     return handle;
 }
@@ -57,7 +57,7 @@
 - (void)forEach:(IdBlock)block {
     @autoreleasepool {
         for (NSUInteger index = 0; index < delegates.count; ) {
-            MLDelegateHandle *handle = [delegates objectAtIndex:index];
+            CDDelegateHandle *handle = [delegates objectAtIndex:index];
             if (handle.delegate) {
                 block(handle.delegate);
                 ++index;
@@ -81,7 +81,7 @@
         }];
         
         if (pass) {
-            [delegates addObject:[MLDelegateHandle newWithDelegate:delegate]];
+            [delegates addObject:[CDDelegateHandle newWithDelegate:delegate]];
         }
     }
 }
@@ -91,7 +91,7 @@
 
     if (delegate) {
         for (NSUInteger index = 0; index < delegates.count; ) {
-            MLDelegateHandle *handle = [delegates objectAtIndex:index];
+            CDDelegateHandle *handle = [delegates objectAtIndex:index];
             if (handle.delegate == nil) {
                 [delegates removeObjectAtIndex:index];
             } else if (handle.delegate == delegate) {
