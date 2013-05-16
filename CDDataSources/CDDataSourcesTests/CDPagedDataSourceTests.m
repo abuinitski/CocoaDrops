@@ -84,23 +84,25 @@
 
 - (void)loadPage:(NSUInteger)pageNumber size:(NSUInteger)pageSize completion:(CDPagedLoadingCompletionBlock)completion
          failure:(CDPagedLoadingFailureBlock)failure {
-
-    NSString *name = [NSString stringWithFormat:@"load-%d", pageNumber];
-
-    [self postOperation:name completion:^{
+    
+    @synchronized(self) {
+        NSString *name = [NSString stringWithFormat:@"load-%d", pageNumber];
         
-        NSMutableArray *array = [NSMutableArray arrayWithCapacity:pageSize];
-
-        for (NSUInteger index = (pageNumber - 1) * pageSize; index < self.totalItemsOnBackend && array.count < pageSize; ++index) {
-            [array addObject:[NSNumber numberWithUnsignedInteger:(index + 1)]];
-        }
-
-        [self registerOperation:name];
-        completion(array, self.totalItemsOnBackend);
-    } failure:^{
-        [self registerOperation:name];
-        failure([NSError errorWithDomain:@"Test" code:100 userInfo:nil]);
-    }];
+        [self postOperation:name completion:^{
+            
+            NSMutableArray *array = [NSMutableArray arrayWithCapacity:pageSize];
+            
+            for (NSUInteger index = (pageNumber - 1) * pageSize; index < self.totalItemsOnBackend && array.count < pageSize; ++index) {
+                [array addObject:[NSNumber numberWithUnsignedInteger:(index + 1)]];
+            }
+            
+            [self registerOperation:name];
+            completion(array, self.totalItemsOnBackend);
+        } failure:^{
+            [self registerOperation:name];
+            failure([NSError errorWithDomain:@"Test" code:100 userInfo:nil]);
+        }];
+    }
 }
 
 - (void)deleteItemsWithCompletion:(CDDataSourceDeletionCompletionBlock)completion failure:(CDDataSourceDeletionFailureBlock)failure {
@@ -272,7 +274,53 @@
     
     [dataSource loadMore];
     STAssertTrue(dataSource.isRefreshing, nil);
-    STAssertTrue(dataSource.isLoadingMore, nil);
+    STAssertFalse(dataSource.isLoadingMore, nil);
+    
+    dataSource = [CDPagedDataSource newWithName:@"dataSource" loadingBlock:loader.loadingBlock pageSize:10];
+    [dataSource refresh];
+    STAssertTrue(dataSource.isRefreshing, nil);
+    STAssertFalse(dataSource.isLoadingMore, nil);
+}
+
+- (void)testRefreshVsLoadMore {
+    DataSourceTestingBackgroundLoader *loader = [[DataSourceTestingBackgroundLoader alloc] init];
+    loader.totalItemsOnBackend = 20;
+
+    CDPagedDataSource *dataSource = [CDPagedDataSource newWithName:@"dataSource" loadingBlock:loader.loadingBlock
+                                                     deletionBlock:loader.deletionBlock pageSize:10];
+
+    [loader expectOperation:@"load-1"];
+    [dataSource refresh];
+    [loader triggerOperationCompletion];
+    
+    [self wait:0.1 andGo:^ {
+        [loader verify];
+        
+        [loader expectOperation:@"load-2"];
+        [dataSource loadMore];
+        
+        STAssertTrue(dataSource.isLoadingMore, nil);
+        STAssertFalse(dataSource.isRefreshing, nil);
+        
+        [loader expectOperation:@"load-1"];
+        [dataSource refresh];
+        
+        STAssertTrue(dataSource.isRefreshing, nil);
+        STAssertFalse(dataSource.isLoadingMore, nil);
+        
+        [loader triggerOperationCompletion];
+        [loader triggerOperationCompletion];
+        
+        [self wait:0.1 andGo:^ {
+            [loader verify];
+            
+            STAssertFalse(dataSource.isRefreshing, nil);
+            STAssertFalse(dataSource.isLoadingMore, nil);
+            
+            NSArray *expectedArray = @[ @1, @2, @3, @4, @5, @6, @7, @8, @9, @10 ];
+            STAssertTrue([expectedArray isEqualToArray:expectedArray], nil);
+        }];
+    }];
 }
 
 - (void)testDelegateEvents {
@@ -331,6 +379,9 @@
     }];
 }
 
+// initial state: is always refreshing
+// refresh priority is greater than loadMore priority; when refresh is forced while loading more, load more respecive end method gets called
+// when refreshing, isLoadingMore=NO, mayLoadMore=NO
 // no sending begin/end loading events when immediate loading
 // did begin/end loading/appending always match
 

@@ -89,7 +89,7 @@
 }
 
 - (BOOL)isLoadingMore {
-    return loadMoreHandle != nil || (refreshHandle != nil && self.items.count == 0);
+    return loadMoreHandle != nil;
 }
 
 - (BOOL)isRefreshing {
