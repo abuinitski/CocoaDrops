@@ -351,14 +351,13 @@
 
     if (converterForDateInEpoch == nil) {
         CDUnmapperBlock mapper = ^ id (id value) {
-            NSNumber *number = value;
-            // TODO: recheck
-            return number ? [NSDate dateWithTimeIntervalSince1970:([number doubleValue] / 1000.0)] : nil;
+            NSDate *date = value;
+            return date ? [NSNumber numberWithDouble:([date timeIntervalSince1970] * 1000.0)] : [NSNull null];
         };
 
         CDMapperBlock unmapper = ^ id (id value) {
-            NSDate *date = value;
-            return date ? [NSNumber numberWithDouble:([date timeIntervalSince1970] * 1000.0)] : [NSNull null];
+            NSNumber *number = value;
+            return number ? [NSDate dateWithTimeIntervalSince1970:([number doubleValue] / 1000.0)] : nil;
         };
 
         converterForDateInEpoch =
